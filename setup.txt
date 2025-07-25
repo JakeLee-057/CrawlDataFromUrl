@@ -1,2 +1,0 @@
-Edge: https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver?form=MA13LH
-Chrome(tải bản chromedriver): https://googlechromelabs.github.io/chrome-for-testing/#dev 
