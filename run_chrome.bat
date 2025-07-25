@@ -1,5 +1,5 @@
 @echo off
-echo === ĐANG CHẠY CHROME SCRAPER ===
+echo === RUNNING CHROME SCRAPER ===
 
 :: Bước 1: Cài thư viện nếu thiếu
 echo ✅ Installing required packages...

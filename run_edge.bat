@@ -1,5 +1,5 @@
 @echo off
-echo === ĐANG CHẠY EDGE SCRAPER ===
+echo === RUNNING EDGE SCRAPER ===
 
 :: Bước 1: Cài thư viện nếu thiếu
 echo ✅ Installing required packages...

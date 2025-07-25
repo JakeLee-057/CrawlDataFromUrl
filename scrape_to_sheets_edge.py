@@ -73,13 +73,13 @@ def write_to_sheet(sheet, data):
     print("✅ Đã ghi dữ liệu lên Google Sheet.")
 
 # === 4. Hàm chính ===
-def scrape_shopeefood_menu(url, sheet_name, worksheet_name):
+def scrape_shopeefood_menu(path, url, sheet_name, worksheet_name):
     # Cấu hình trình duyệt Edge
     options = webdriver.EdgeOptions()
     options.add_argument("--headless")
     options.add_argument("--disable-gpu")
     options.add_argument("--log-level=3")  # Giảm log rác
-    service = EdgeService(executable_path="D:\\CrawlData\\msedgedriver.exe") # Update path
+    service = EdgeService(path) # Update path
     driver = webdriver.Edge(service=service, options=options)
 
     try:
@@ -108,7 +108,10 @@ def scrape_shopeefood_menu(url, sheet_name, worksheet_name):
 # === 5. Gọi chạy ===
 if __name__ == "__main__":
     menu_url = "https://shopeefood.vn/ha-noi/rau-ma-la-nuoc-dua-sua-dau-nanh-tran-quoc-hoan"
+    executable_path="E:\\ShopeeFood\\msedgedriver.exe"
+
     scrape_shopeefood_menu(
+        path=executable_path,
         url=menu_url,
         sheet_name="FoodData",
         worksheet_name="Rau má lá"
